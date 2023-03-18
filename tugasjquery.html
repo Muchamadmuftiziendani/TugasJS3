@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pemanggilan Gambar Jquery </title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#single-image').click(function(){
+                $(this).hide();
+            });
+            $('#multi-image').click(function(){
+                $('.image').hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <img id="single-image" src="img/emyu.jpg">
+    <div id="multi-image">
+        <img class="image" src="img/emyu 2.jpeg">
+        <img class="image" src="img/emyu 3.jpg">
+        <img class="image" src="img/cristiano-ronaldo-47.jpg">
+    </div>
+
+</body>
+</html>
